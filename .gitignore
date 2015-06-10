@@ -5,10 +5,12 @@ __pycache__/
 node_modules
 
 # build artifacts
+/backend/auto_static
 /frontend/dist
 *sublime*
 
+/.idea/
+*.iml
+
 logs/*/*.log
 backups/*.bak
-
-*.iml

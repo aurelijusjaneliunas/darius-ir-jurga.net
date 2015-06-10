@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+node_modules
+
+# build artifacts
+/frontend/dist
+*sublime*
+
+logs/*/*.log
+backups/*.bak
+
+*.iml

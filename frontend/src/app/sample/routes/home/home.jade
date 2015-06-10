@@ -1,0 +1,18 @@
+.stag-container.panel.panel-default
+    .panel-heading
+        h3.panel-title.text-center Waiting...
+    .panel-body
+        flash
+        form.form-horizontal(name="form")
+            .form-group
+                .col-md-12
+                    .input-group
+                        input.form-control(type="number", placeholder="XX", ng-model="coords.long", required)
+                        .input-group-addon .5831812
+            .form-group
+                .col-md-12
+                    .input-group
+                        input.form-control(type="number", placeholder="YY", ng-model="coords.lat", required)
+                        .input-group-addon .0074432
+            button.btn.btn-primary(type="submit", ng-click="ctrl.lock(form)", ng-disabled="!form.$valid")
+                | Play

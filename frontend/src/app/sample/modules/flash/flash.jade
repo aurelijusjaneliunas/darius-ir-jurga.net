@@ -1,0 +1,3 @@
+.flash(ng-if="message")
+    .alert.alert-danger(ng-if="message && message.level=='error'") {{message.message}}
+    .alert.alert-success(ng-if="message && message.level=='success'") {{message.message}}

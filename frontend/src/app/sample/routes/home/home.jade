@@ -11,17 +11,15 @@
                 timer(end-time="countdown.end")
                     .timer-box
                         | {{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.
-        div(ng-if="!locker")
-            form.form-horizontal(name="form")
+        .row(ng-if="!locker")
+            form.form.col-xs-12.col-md-12.center-block(name="form")
                 .form-group
-                    .col-md-12
-                        .input-group
-                            input.form-control(type="number", placeholder="XX", ng-model="coords.long", required)
-                            .input-group-addon .5831812
+                    .input-group
+                        input.form-control.input-lg(type="number", placeholder="XX", ng-model="coords.long", required)
+                        .input-group-addon .5831812
                 .form-group
-                    .col-md-12
-                        .input-group
-                            input.form-control(type="number", placeholder="YY", ng-model="coords.lat", required)
-                            .input-group-addon .0074432
+                    .input-group
+                        input.form-control.input-lg(type="number", placeholder="YY", ng-model="coords.lat", required)
+                        .input-group-addon .0074432
                 button.btn.btn-primary.btn-lg.btn-block(type="submit", ng-click="ctrl.lock(form)", ng-disabled="!form.$valid")
                     | Play
